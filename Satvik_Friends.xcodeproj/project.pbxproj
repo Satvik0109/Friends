@@ -3,23 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD75BACF274EDB6400169C10 /* FireDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75BACE274EDB6400169C10 /* FireDBHelper.swift */; };
+		BD75BAD4274EDC0400169C10 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75BAD3274EDC0400169C10 /* Friend.swift */; };
 		BD78E1F4274ECE4900E18446 /* Satvik_FriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78E1F3274ECE4900E18446 /* Satvik_FriendsApp.swift */; };
 		BD78E1F6274ECE4900E18446 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78E1F5274ECE4900E18446 /* ContentView.swift */; };
 		BD78E1F8274ECE5100E18446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD78E1F7274ECE5100E18446 /* Assets.xcassets */; };
 		BD78E1FB274ECE5100E18446 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD78E1FA274ECE5100E18446 /* Preview Assets.xcassets */; };
+		BD78E204274ECF4D00E18446 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD78E203274ECF4D00E18446 /* GoogleService-Info.plist */; };
+		DAC0C277A295A569CD7CAC66 /* Pods_Satvik_Friends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707C5905BD2AFB669A0905CE /* Pods_Satvik_Friends.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0954206F37B81483E460EB89 /* Pods-Satvik_Friends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Satvik_Friends.debug.xcconfig"; path = "Target Support Files/Pods-Satvik_Friends/Pods-Satvik_Friends.debug.xcconfig"; sourceTree = "<group>"; };
+		707C5905BD2AFB669A0905CE /* Pods_Satvik_Friends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Satvik_Friends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD75BACE274EDB6400169C10 /* FireDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDBHelper.swift; sourceTree = "<group>"; };
+		BD75BAD3274EDC0400169C10 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		BD78E1F0274ECE4900E18446 /* Satvik_Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Satvik_Friends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD78E1F3274ECE4900E18446 /* Satvik_FriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Satvik_FriendsApp.swift; sourceTree = "<group>"; };
 		BD78E1F5274ECE4900E18446 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD78E1F7274ECE5100E18446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD78E1FA274ECE5100E18446 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD78E1FC274ECE5100E18446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD78E203274ECF4D00E18446 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF5F98D5088CAA114C083A0F /* Pods-Satvik_Friends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Satvik_Friends.release.xcconfig"; path = "Target Support Files/Pods-Satvik_Friends/Pods-Satvik_Friends.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +37,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC0C277A295A569CD7CAC66 /* Pods_Satvik_Friends.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F9ED53B53B03F5ABE47F687 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				707C5905BD2AFB669A0905CE /* Pods_Satvik_Friends.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD75BACC274EDB4900169C10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD75BAD3274EDC0400169C10 /* Friend.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD75BACD274EDB4F00169C10 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BD75BACE274EDB6400169C10 /* FireDBHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BD75BAD2274EDBEE00169C10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD78E1F5274ECE4900E18446 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BD78E1E7274ECE4900E18446 = {
 			isa = PBXGroup;
 			children = (
 				BD78E1F2274ECE4900E18446 /* Satvik_Friends */,
 				BD78E1F1274ECE4900E18446 /* Products */,
+				E4ECC755A4C372D2B62B954F /* Pods */,
+				5F9ED53B53B03F5ABE47F687 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +97,11 @@
 		BD78E1F2274ECE4900E18446 /* Satvik_Friends */ = {
 			isa = PBXGroup;
 			children = (
+				BD75BAD2274EDBEE00169C10 /* Views */,
+				BD75BACD274EDB4F00169C10 /* Helpers */,
+				BD75BACC274EDB4900169C10 /* Models */,
+				BD78E203274ECF4D00E18446 /* GoogleService-Info.plist */,
 				BD78E1F3274ECE4900E18446 /* Satvik_FriendsApp.swift */,
-				BD78E1F5274ECE4900E18446 /* ContentView.swift */,
 				BD78E1F7274ECE5100E18446 /* Assets.xcassets */,
 				BD78E1FC274ECE5100E18446 /* Info.plist */,
 				BD78E1F9274ECE5100E18446 /* Preview Content */,
@@ -69,6 +117,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E4ECC755A4C372D2B62B954F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0954206F37B81483E460EB89 /* Pods-Satvik_Friends.debug.xcconfig */,
+				CF5F98D5088CAA114C083A0F /* Pods-Satvik_Friends.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD78E1FF274ECE5100E18446 /* Build configuration list for PBXNativeTarget "Satvik_Friends" */;
 			buildPhases = (
+				7D0F2BC0498A662E76B14694 /* [CP] Check Pods Manifest.lock */,
 				BD78E1EC274ECE4900E18446 /* Sources */,
 				BD78E1ED274ECE4900E18446 /* Frameworks */,
 				BD78E1EE274ECE4900E18446 /* Resources */,
+				893D22579BAF3D55A34EC273 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +187,53 @@
 			files = (
 				BD78E1FB274ECE5100E18446 /* Preview Assets.xcassets in Resources */,
 				BD78E1F8274ECE5100E18446 /* Assets.xcassets in Resources */,
+				BD78E204274ECF4D00E18446 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D0F2BC0498A662E76B14694 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Satvik_Friends-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		893D22579BAF3D55A34EC273 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Satvik_Friends/Pods-Satvik_Friends-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Satvik_Friends/Pods-Satvik_Friends-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Satvik_Friends/Pods-Satvik_Friends-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD78E1EC274ECE4900E18446 /* Sources */ = {
@@ -139,7 +241,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD78E1F6274ECE4900E18446 /* ContentView.swift in Sources */,
+				BD75BACF274EDB6400169C10 /* FireDBHelper.swift in Sources */,
 				BD78E1F4274ECE4900E18446 /* Satvik_FriendsApp.swift in Sources */,
+				BD75BAD4274EDC0400169C10 /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +368,7 @@
 		};
 		BD78E200274ECE5100E18446 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0954206F37B81483E460EB89 /* Pods-Satvik_Friends.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -285,6 +390,7 @@
 		};
 		BD78E201274ECE5100E18446 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF5F98D5088CAA114C083A0F /* Pods-Satvik_Friends.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
