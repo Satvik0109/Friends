@@ -12,15 +12,16 @@ import FirebaseFirestore
 @main
 struct Satvik_FriendsApp: App {
     let fireDBHelper : FireDBHelper
+    let locationHelper = LocationHelper()
     
     init(){
         FirebaseApp.configure()
-        fireDBHelper = fireDBHelper(database: Firestore.firestore())
+        fireDBHelper = FireDBHelper(database: Firestore.firestore())
     }
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(fireDBHelper)
+            ContentView().environmentObject(fireDBHelper).environmentObject(locationHelper)
         }
     }
 }

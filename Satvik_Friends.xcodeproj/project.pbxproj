@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BD75BACF274EDB6400169C10 /* FireDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75BACE274EDB6400169C10 /* FireDBHelper.swift */; };
 		BD75BAD4274EDC0400169C10 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75BAD3274EDC0400169C10 /* Friend.swift */; };
+		BD75BB20274EE85700169C10 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75BB1F274EE85700169C10 /* LocationHelper.swift */; };
 		BD78E1F4274ECE4900E18446 /* Satvik_FriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78E1F3274ECE4900E18446 /* Satvik_FriendsApp.swift */; };
 		BD78E1F6274ECE4900E18446 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78E1F5274ECE4900E18446 /* ContentView.swift */; };
 		BD78E1F8274ECE5100E18446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD78E1F7274ECE5100E18446 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		707C5905BD2AFB669A0905CE /* Pods_Satvik_Friends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Satvik_Friends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD75BACE274EDB6400169C10 /* FireDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDBHelper.swift; sourceTree = "<group>"; };
 		BD75BAD3274EDC0400169C10 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		BD75BB1F274EE85700169C10 /* LocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
 		BD78E1F0274ECE4900E18446 /* Satvik_Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Satvik_Friends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD78E1F3274ECE4900E18446 /* Satvik_FriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Satvik_FriendsApp.swift; sourceTree = "<group>"; };
 		BD78E1F5274ECE4900E18446 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				BD75BACE274EDB6400169C10 /* FireDBHelper.swift */,
+				BD75BB1F274EE85700169C10 /* LocationHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				BD75BACF274EDB6400169C10 /* FireDBHelper.swift in Sources */,
 				BD78E1F4274ECE4900E18446 /* Satvik_FriendsApp.swift in Sources */,
 				BD75BAD4274EDC0400169C10 /* Friend.swift in Sources */,
+				BD75BB20274EE85700169C10 /* LocationHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

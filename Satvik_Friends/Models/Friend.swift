@@ -6,9 +6,10 @@
 //  991487352
 
 import Foundation
+import FirebaseFirestoreSwift
 
 struct Friend : Codable, Identifiable, Hashable{
-    var id : String? = UUID().uuidString
+    @DocumentID var id : String? = UUID().uuidString
     var name : String = ""
     var city : String = ""
     var country : String = ""
